@@ -1,0 +1,12 @@
+meta:
+  environment: node
+  toolchain:
+    name: npm
+    version: 20
+build:
+  artifacts:
+    src: dist
+  command: ''
+run:
+  persistenceMount: /data
+  containerPort: 80
