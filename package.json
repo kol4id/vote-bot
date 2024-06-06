@@ -4,6 +4,7 @@
   "description": "",
   "main": "src/main.ts",
   "scripts": {
+    "install-and-build": "npm install && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "ts-node src/main.ts",
     "watch": "tsc --watch",
