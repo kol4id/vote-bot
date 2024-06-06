@@ -6,8 +6,7 @@ meta:
 build:
   artifacts:
     ./src: ./dist
-  additionalCommands: 'npm run '
-  command: ''
+  command: npm run install-and-build
 run:
   persistenceMount: /data
   containerPort: 80
