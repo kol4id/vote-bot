@@ -2,10 +2,11 @@ meta:
   environment: node
   toolchain:
     name: npm
-    version: 20
+    version: 20.9
 build:
   artifacts:
-    src: dist
+    ./src: ./dist
+  additionalCommands: 'npm run '
   command: ''
 run:
   persistenceMount: /data
