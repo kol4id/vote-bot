@@ -146,7 +146,7 @@ const main = async() =>{
         const vote = await Vote.findOne({chatId: chatId});
         if (vote?.vote){
             if(vote.secondVote){
-                bot.sendMessage(chatId, `Ваш первый голос отдан за группу ${vote.vote}\nВаш второй голос отдан за группу ${vote.secondVote}\n\nYour first vote was cast for the group ${vote.vote}\nour second vote was cast for the group ${vote.secondVote}`)
+                bot.sendMessage(chatId, `Ваш первый голос отдан за группу ${vote.vote}\nВаш второй голос отдан за группу ${vote.secondVote}\n\nYour first vote was cast for the group ${vote.vote}\nYour second vote was cast for the group ${vote.secondVote}`)
             } else {
                 bot.sendMessage(chatId, `Ваш голос отдан за группу ${vote.vote}\n\nYour vote was cast for the group ${vote.vote}`)
             }
